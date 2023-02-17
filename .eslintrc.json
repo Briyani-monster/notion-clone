@@ -1,0 +1,102 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"jest": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"airbnb",
+		"plugin:prettier/recommended"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2021,
+		"sourceType": "module",
+		"requireConfigFile": false,
+		"babelOptions": {
+			"presets": ["@babel/preset-react"]
+		}
+	},
+	"plugins": ["prettier", "react"],
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx"],
+				"paths": ["src"]
+			}
+		}
+	},
+	"rules": {
+		"prefer-destructuring": "error",
+		"quotes": ["error", "double"],
+		"semi": ["error", "always"],
+		"no-console": "off",
+		"global-require": "warn",
+		"no-return-await": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		],
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never"
+			}
+		],
+		"react/jsx-one-expression-per-line": "off",
+		"react/jsx-no-bind": [
+			"error",
+			{
+				"allowArrowFunctions": true,
+				"allowFunctions": true
+			}
+		],
+		"react/button-has-type": "off",
+		"import/prefer-default-export": "off",
+		"no-unused-vars": "off",
+		"no-underscore-dangle": "off",
+		"import/no-extraneous-dependencies": "warn",
+		"react/jsx-props-no-spreading": "off",
+		"no-param-reassign": "off",
+		"react/forbid-prop-types": "off",
+		"consistent-return": "off",
+		"no-nested-ternary": "off",
+		"react/jsx-curly-newline": "off",
+		"react/no-array-index-key": "off",
+		"jsx-a11y/click-events-have-key-events": "off",
+		"jsx-a11y/no-static-element-interactions": "off",
+		"react/jsx-wrap-multilines": "off",
+		"no-unneeded-ternary": "off",
+		"camelcase": "off",
+		"array-callback-return": "off",
+		"jsx-a11y/label-has-associated-control": "off",
+		"jsx-a11y/mouse-events-have-key-events": "off",
+		"react/require-default-props": "off",
+		"react/jsx-indent": "off",
+		"no-use-before-define": "off",
+		"import/no-named-as-default": "off",
+		"import/no-named-as-default-member": "off",
+		"lines-between-class-members": "off",
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto"
+			}
+		],
+		"max-classes-per-file": "off",
+		"import/no-dynamic-require": 0
+	}
+}
